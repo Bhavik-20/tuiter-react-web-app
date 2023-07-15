@@ -165,3 +165,7 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+.like {
+    color: palevioletred;
+}
