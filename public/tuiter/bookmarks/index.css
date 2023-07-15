@@ -156,6 +156,12 @@
 }
 
 .wd-tuit-option i {
-    margin-top: 18px;
+    /* margin-top: 18px; */
     margin-right: 10px;
+}
+
+.wd-tuit-option button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
