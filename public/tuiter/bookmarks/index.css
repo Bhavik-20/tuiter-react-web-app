@@ -45,6 +45,11 @@
     width: 90%;
 }
 
+.wd-tuit-body a {
+    color: #1dcaff;
+    text-decoration: none;
+}
+
 .wd-tuit-body h3 {
     margin-top: 0px;
     margin-bottom: -5px;
@@ -56,31 +61,17 @@
     width: 100%;
 }
 
+.wd-tuit-fullname-pic {
+    background: transparent;
+    height: auto;
+    width: 2%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
 .wd-tuit button {
     background-color: transparent;
     border: none;
-}
-
-.wd-canada-flag {
-    background-color: red;
-    width: 30px;
-    height: 13px;
-    margin-top: 6px;
-    margin-left: 8px;
-    position: relative;
-}
-
-.wd-canada-flag-2 {
-    background-color: white;
-    width: 18px;
-    height: 13px;
-    margin-left: 6px;
-    position: absolute;
-}
-
-.wd-canada-flag-2 .fab {
-    color: red;
-    margin-left: 1px;
 }
 
 .wd-verified-user {
