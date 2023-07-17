@@ -74,17 +74,9 @@
     border: none;
 }
 
-.wd-verified-user {
-    margin-top: 5px;
-    margin-left: 8px;
-    color: #1dcaff;
-    position: relative;
-}
-
 .wd-tuit-username {
     color: #666;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .wd-dot {
@@ -159,4 +151,25 @@
 
 .like {
     color: palevioletred;
+}
+
+.wd-verified-user {
+    margin-left: 3px;
+    margin-bottom: 5px;
+    color: #1dcaff;
+}
+
+.wd-verified-user .fa-certificate {
+    position: relative;
+    color: #1dcaff;
+    position: absolute;
+    font-size: 20px;
+}
+
+.wd-verified-user .fa-check {
+    color: white;
+    position: relative;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 3px;
 }
