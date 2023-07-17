@@ -112,6 +112,7 @@
     padding: 0;
     background-color: #FBFCFC;
     padding: 5px;
+    border: #999 solid 0.5px;
 }
 
 .wd-tuit-list-item {

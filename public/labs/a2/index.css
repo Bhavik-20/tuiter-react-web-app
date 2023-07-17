@@ -209,7 +209,30 @@ p#id-selector-2 {
    float: left;
 }
 
+.btn-dark {
+   background-color:  red;
+   color: white;
+}
 
+.pill-nav a {
+   display: inline-block;
+   color: black;
+   text-align: center;
+   padding: 14px;
+   text-decoration: none;
+   font-size: 17px;
+   border-radius: 5px;
+}
+
+.pill-nav a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+.pill-nav a.active {
+   background-color: dodgerblue;
+   color: white;
+}
 
 
 
