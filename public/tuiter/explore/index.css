@@ -38,6 +38,7 @@
     color: #000;
     cursor: pointer;
     padding-left: 40px;
+    /* font-size: 25px; */
 }
 
 .wd-explore-tabs {
@@ -169,18 +170,18 @@
 }
 
 .wd-tuit-list-item-title {
-    font-size: 15px;
+    font-size: 12px;
     color: #666;
 }
 
 .wd-tuit-list-item-body {
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .wd-tuit-list-item-footer {
-    font-size: 15px;
+    font-size: 12px;
     color: #666;
 }
 
@@ -203,7 +204,7 @@
     font-size: 15px;
 }
 
-.wd-search-bar {
+.wd-search-bar-bs {
     padding-left: 2.375rem;
     width: 80%;
     background-color: white;
@@ -223,7 +224,6 @@
 .wd-btn {
     color: blue;
     font-size: 25px;
-    margin-bottom: 10px;
     padding: 0px;
     padding-left: 10px;
 }
