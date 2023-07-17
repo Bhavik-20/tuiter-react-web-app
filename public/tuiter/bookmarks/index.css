@@ -29,8 +29,8 @@
 
 .wd-tuit-display-pic img {
     border-radius: 50%;
-    height: 60px;
-    width: 80%;
+    height: 80px;
+    width: 80px;
     object-fit: cover;
 }
 
