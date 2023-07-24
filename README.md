@@ -1,4 +1,4 @@
-# Getting Started with Create React App for Web Development CS 5610
+# Getting Started with Create React App for Web Development CS 5610 Summer 2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
