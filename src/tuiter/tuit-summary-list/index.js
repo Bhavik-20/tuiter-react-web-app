@@ -1,7 +1,6 @@
 import React from "react";
 import tuitsArray from './tuits.json';
-import TuitSummaryItem
-  from "./tuit-summary-item";
+import TuitSummaryItem from "./tuit-summary-item";
 
 const TuitSummaryList = () => {
  return(
