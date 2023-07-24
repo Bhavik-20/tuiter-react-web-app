@@ -19,9 +19,8 @@ const TuitSummaryItem = (
   <li className="list-group-item">
    <div className="row">
     <div className="col-9">
-      <div className="wd-tuit-list-item-title">{tuit.topic}</div>
+      <div className="wd-tuit-list-item-title">{tuit.topic} - {tuit.time}</div>
       <span className="wd-tuit-list-item-body">{tuit.userName} <i className="fa fa-check-circle"></i></span>
-      <span className="wd-tuit-list-item-title"> - {tuit.time}</span>
       <div className="wd-tuit-list-item-body">{tuit.title}</div>
     </div>
     <div className="col-3 d-flex align-items-center justify-content-center">
