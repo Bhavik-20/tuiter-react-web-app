@@ -1,0 +1,24 @@
+.wd-tuit-list-item {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.wd-tuit-list-item-body {
+    font-size: 15px;
+    color: #666;
+}
+
+.wd-tuit-list-item-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.wd-explore-tuit-img {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    /* padding-left: 5%; */
+    /* padding-right: 50%; */
+    border-radius: 100px;
+}
