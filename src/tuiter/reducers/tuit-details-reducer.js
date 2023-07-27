@@ -19,16 +19,15 @@ const templateTuit = {
 
 const tuitDetailsSlice = createSlice({
  name: 'tuitDetails',
- initialState: {tuitDetails: tuitDetails},
+ initialState: {tuitsArray: tuitDetails},
  reducers: {
   deleteTuit(state, action) {
-     const index = state.tuitDetails
-        .findIndex(tuitDetails =>
-           tuitDetails._id === action.payload);
-     state.tuitDetails.splice(index, 1);
+     const index = state.tuitsArray.findIndex(tuitsArray =>
+           tuitsArray._id === action.payload);
+     state.tuitsArray.splice(index, 1);
    },
    createTuit(state, action) {
-     state.tuitDetails.unshift({
+     state.tuitsArray.unshift({
        ...action.payload,
        ...templateTuit,
        _id: (new Date()).getTime(),

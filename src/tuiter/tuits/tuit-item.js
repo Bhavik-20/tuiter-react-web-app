@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "../reducers/tuit-details-reducer";
+import TuitStats from "./tuit-stats";
 
 const TuitItem = ({tuitDetails}) => {
 
@@ -12,32 +13,17 @@ const TuitItem = ({tuitDetails}) => {
  return(
   <li className="list-group-item">
    <div className="row">
-    <div className="col-3">
-        <img className="wd-explore-tuit-img" src={`${tuitDetails.image}`} alt=""/>
+    <div className="col-2">
+        <img width={70} className="img-fluid mx-auto d-block rounded-circle" src={`${tuitDetails.image}`} alt=""/>
     </div>
-    <div className="col-9">
+    <div className="col-10">
       <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuitDetails._id)}></i>
       <span className="wd-tuit-list-item-title">{tuitDetails.userName} <i className="fa fa-check-circle"></i></span>
       <span className="wd-tuit-list-item-body"> {tuitDetails.handle} - {tuitDetails.time} </span>
       <div className="wd-tuit-list-item-body">{tuitDetails.tuit}</div>
     </div>
    </div>
-   <div className="row">
-    <div className="col-3"></div>
-    <div className="col-2">
-      <button className="btn"><i className="fa fa-comment"></i></button> {tuitDetails.replies}
-    </div>
-    <div className="col-2">
-      <button className="btn"><i className="fa fa-retweet"></i></button> {tuitDetails.retuits}
-    </div>
-    <div className="col-2">
-      <button className="btn"><i className="fa fa-heart"></i></button> {tuitDetails.likes}
-    </div>
-    <div className="col-2">
-      <button className="btn"><i className="fa fa-upload"></i></button>
-    </div>
-    <div className="col-1"></div>
-   </div>
+   <TuitStats key={tuitDetails._id} tuitDetails={tuitDetails} />
   </li>
  );
 };
