@@ -1,0 +1,57 @@
+.wd-tabs li {
+    display: inline;
+}
+
+.wd-tabs {
+    padding-left: 0px;
+}
+
+.wd-selected {
+    border-bottom: 2px blue solid;
+    padding-bottom: 20px;
+}
+
+.wd-nudge-up {
+    bottom: 3px;
+    left: 25px;
+}
+
+.wd-bottom-2 {
+    bottom: 2px;
+}
+
+.wd-top-4 {
+    top: 4px;
+}
+
+/* .wd-search-bar-bs {
+    padding-left: 2.375rem;
+    width: 80%;
+    background-color: white;
+}
+
+.wd-btn {
+    color: blue;
+    font-size: 25px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+.wd-explore-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.wd-explore-img img {
+    width: 100%;
+    height: 350px;
+}
+
+.wd-explore-img-header {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+    font-weight: bolder;
+} */
