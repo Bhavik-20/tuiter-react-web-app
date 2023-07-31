@@ -1,0 +1,230 @@
+.wd-search-form {
+    display: flex;
+    align-items: center;
+}
+
+.wd-search-bar {
+    display: flex;
+    align-items: center;
+    
+    /* How to keep this dynamic */
+    height: 40px;
+
+    width: 90%;
+    background-color: #EAEDED;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.wd-search-bar input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+}
+
+.wd-search-bar i {
+    margin-right: 10px;
+    color: #000;
+}
+
+.wd-button {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.wd-explore-tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.wd-explore-tab {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 20%;
+    color: #666;
+}
+
+.wd-explore-tab label {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.wd-explore-tab .checked-tab {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 78%;
+    height: 3px;
+    background-color: lightskyblue;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.wd-explore-tab input[type="radio"] {
+    display: none;
+}
+
+.wd-explore-tab input[type="radio"]:checked+label {
+    color: black;
+}
+
+.wd-explore-tab input[type="radio"]:checked+label .checked-tab {
+    transform: scaleX(1);
+}
+
+.wd-explore-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.wd-explore-img img {
+    width: 100%;
+    height: 350px;
+}
+
+.wd-explore-img-header{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.wd-tuit-list {
+    list-style-type: none;
+    padding: 0;
+    background-color: #FBFCFC;
+    padding: 5px;
+    border: #999 solid 0.5px;
+}
+
+.wd-tuit-list-item {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.wd-tuit-list-item .wd-tuit-list-item-title {
+    font-size: 15px;
+    color: #666;
+}
+
+.wd-tuit-list-item .wd-tuit-list-item-body {
+    font-weight: bold;
+    margin-bottom: 5px;   
+    font-size: 20px;
+}
+
+.wd-tuit-list-item .wd-tuit-list-item-title-more {
+    margin-bottom: 5px;
+    font-size: 20px;
+    position: relative;
+    float: right;
+}
+
+.wd-tuit-list-item .wd-tuit-list-item-footer {
+    font-size: 15px;
+    color: #666;
+}
+
+/* EXPLORE BOOTSTRAP */
+.wd-main-div {
+    /* padding-top: 3%; */
+    padding: 1%;
+}
+
+.wd-explore-search {
+    position: relative;
+    width: 85%;
+    border-color: lightgray;
+    border-radius: 1px;
+}
+
+.wd-explore-search-icon {
+    position: relative;
+    margin-left: 3%;
+}
+
+.wd-explore-tuit-img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20px;
+}
+
+.wd-tuit-list-item-title {
+    font-size: 12px;
+    color: #666;
+}
+
+.wd-tuit-list-item-body {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.wd-tuit-list-item-footer {
+    font-size: 12px;
+    color: #666;
+}
+
+.wd-explore-follow-sugg-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.wd-explore-btn {
+    padding: 3%;
+    width: 100%;
+    font-size: 13px;
+    /* height: 70%; */
+}
+
+.fa-check-circle{ 
+    margin-left: 2px;
+    font-size: 15px;
+}
+
+.wd-search-bar-bs {
+    padding-left: 2.375rem;
+    width: 80%;
+    background-color: white;
+}
+
+.form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+.wd-btn {
+    color: blue;
+    font-size: 25px;
+    padding: 0px;
+    padding-left: 10px;
+}

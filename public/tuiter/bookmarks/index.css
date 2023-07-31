@@ -1,0 +1,175 @@
+.wd-bookmarks-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wd-bookmarks-header button {
+    background-color: transparent;
+    border: none;
+}
+
+.wd-bookmarks-header h2 {
+    width: 90%;
+    padding-left: 30px;
+}
+
+.wd-bookmarks-more {
+    float: inline-end;
+}
+
+.wd-tuit {
+    border: 1px solid #EAEDED;
+    padding: 20px;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-tuit-display-pic img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.wd-tuit-user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wd-tuit-body {
+    padding-left: 20px;
+    width: 90%;
+}
+
+.wd-tuit-body a {
+    color: #1dcaff;
+    text-decoration: none;
+}
+
+.wd-tuit-body h3 {
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+.wd-tuit-fullname {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wd-tuit-fullname-pic {
+    background: transparent;
+    height: auto;
+    width: 2%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.wd-tuit button {
+    background-color: transparent;
+    border: none;
+}
+
+.wd-tuit-username {
+    color: #666;
+    margin-left: 10px;
+}
+
+.wd-dot {
+    font-size: 5px;
+    padding-bottom: 50px;
+    vertical-align: middle;
+}
+
+.wd-tuit-pic {
+    border: 1px solid #EAEDED;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.wd-tuit-pic hr {
+    margin: 0px;
+    background-color: #EAEDED;
+    height: 1px;
+    border: none;
+}
+
+.wd-tuit-cover-pic {
+    height: 70%;
+    width: 100%;
+}
+
+.wd-tuit-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-tuit-pic-deets {
+    height: 30%;
+    padding: 10px;
+}
+
+.wd-tuit-pic-deets p {
+    margin: 3px;
+}
+
+.wd-tuit-pic-deets-1 {
+    font-size: 12px;
+    color: #666;
+}
+
+.wd-tuit-options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #666;
+}
+
+.wd-tuit-option {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.wd-tuit-option i {
+    /* margin-top: 18px; */
+    margin-right: 10px;
+}
+
+.wd-tuit-option button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.like {
+    color: palevioletred;
+}
+
+.wd-verified-user {
+    margin-left: 3px;
+    margin-bottom: 5px;
+    color: #1dcaff;
+}
+
+.wd-verified-user .fa-certificate {
+    position: relative;
+    color: #1dcaff;
+    position: absolute;
+    font-size: 20px;
+}
+
+.wd-verified-user .fa-check {
+    color: white;
+    position: relative;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
