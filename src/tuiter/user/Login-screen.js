@@ -9,8 +9,13 @@ function LoginScreen() {
  const dispatch = useDispatch();
  const handleLogin = async () => {
   try {
-    await dispatch(loginThunk({ username, password }));
-    navigate("/tuiter/profile");
+    const res = await dispatch(loginThunk({ username, password }));
+    console.log("handleLogin 1: " + JSON.stringify(res));
+    if(res.error) {
+      alert("User does not exist");
+    } else {
+      navigate("/tuiter/profile");
+    }
   } catch (e) {
     alert(e);
   }
