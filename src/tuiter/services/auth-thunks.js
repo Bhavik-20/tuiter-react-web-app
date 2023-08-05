@@ -5,6 +5,7 @@ import * as authService from "./auth-service";
 export const loginThunk = createAsyncThunk(
  "user/login", async (credentials) => {
    const user = await authService.login(credentials);
+   console.log("loginThunk: ", user);
    return user;
  }
 );
@@ -18,7 +19,9 @@ export const registerThunk = createAsyncThunk(
 
 export const profileThunk = createAsyncThunk(
  "auth/profile", async () => {
- const response = authService.profile();
+  console.log("profileThunk");
+ const response = await authService.profile();
+ console.log("profileThunk response: ", response.data);
  return response.data;
 });
 
@@ -29,6 +32,7 @@ export const logoutThunk = createAsyncThunk(
 
 export const updateUserThunk = createAsyncThunk(
  "user/updateUser", async (user) => {
+  console.log("updateUserThunk: ", user);
    await authService.updateUser(user);
    return user;
 });
