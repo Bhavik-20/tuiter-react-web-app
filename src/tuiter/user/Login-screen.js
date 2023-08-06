@@ -9,6 +9,10 @@ function LoginScreen() {
  const dispatch = useDispatch();
  const handleLogin = async () => {
   try {
+    if(!username || !password) {
+      alert("Username and password are required");
+      return;
+    }
     const res = await dispatch(loginThunk({ username, password }));
     console.log("handleLogin 1: " + JSON.stringify(res));
     if(res.error) {

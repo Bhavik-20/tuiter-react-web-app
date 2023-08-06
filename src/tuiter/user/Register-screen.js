@@ -11,8 +11,16 @@ function RegisterScreen() {
 
  const handleRegister = async () => {
   try {
-    await dispatch(registerThunk({ username, password }));
-    navigate("/tuiter/profile");
+    if(!username || !password) {
+      alert("Username and password are required");
+      return;
+    }
+    const response = await dispatch(registerThunk({ username, password }));
+    if(response.error) {
+      alert("Username already exists");
+    } else {
+      navigate("/tuiter/profile");
+    }
   } catch (e) {
     alert(e);
   }

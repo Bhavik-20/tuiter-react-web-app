@@ -14,8 +14,13 @@ function ProfileScreen() {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const save = async () => {
-		console.log("save");
-		await dispatch(updateUserThunk(profile));
+		try{
+			await dispatch(updateUserThunk(profile));
+			alert("Profile saved");
+			navigate("/tuiter/profile");
+		} catch (error) {
+        	console.log("Error saving profile: ", error);
+    	}
 	};
 
 	const loadProfile = async () => {
