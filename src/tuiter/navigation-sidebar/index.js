@@ -18,7 +18,7 @@ const NavigationSidebar = () => {
          </Link>
       )}
       {currentUser &&
-      <Link className={`list-group-item text-capitalize ${active === "profile" ? "active" : ""}`} to="/tuiter/login">
+      <Link className={`list-group-item text-capitalize ${active === "profile" ? "active" : ""}`} to="/tuiter/profile">
         <span><i className="bi bi-person me-2"/></span> 
         <span className="d-none d-xl-inline-block">Profile</span>
       </Link>}
