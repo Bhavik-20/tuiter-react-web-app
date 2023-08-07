@@ -14,6 +14,7 @@ const authSlice = createSlice({
      state.currentUser = null;
    },
    [profileThunk.fulfilled]: (state, { payload }) => {
+    console.log("profile fulfilled: ", payload)
      state.currentUser = payload;
    },
    [profileThunk.rejected]: (state, { payload }) => {
@@ -22,7 +23,11 @@ const authSlice = createSlice({
    [profileThunk.pending]: (state, action) => {
      state.currentUser = null;
    },
+   [updateUserThunk.pending]: (state, action) => {
+      console.log("update reducer pending")
+   },
    [updateUserThunk.fulfilled]: (state, { payload }) => {
+    console.log("update reducer: ", payload)
      state.currentUser = payload;
    },
    [registerThunk.fulfilled]: (state, { payload }) => {

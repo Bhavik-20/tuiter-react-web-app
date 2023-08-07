@@ -7,6 +7,7 @@ function LoginScreen() {
  const [password, setPassword] = useState("");
  const navigate = useNavigate();
  const dispatch = useDispatch();
+
  const handleLogin = async () => {
   try {
     if(!username || !password) {
@@ -14,7 +15,6 @@ function LoginScreen() {
       return;
     }
     const res = await dispatch(loginThunk({ username, password }));
-    console.log("handleLogin 1: " + JSON.stringify(res));
     if(res.error) {
       alert("User does not exist");
     } else {
@@ -24,6 +24,7 @@ function LoginScreen() {
     alert(e);
   }
  };
+ 
  return (
     <div>
     <h1>Login Screen</h1>

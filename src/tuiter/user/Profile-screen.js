@@ -15,19 +15,17 @@ function ProfileScreen() {
 	const navigate = useNavigate();
 	const save = async () => {
 		try{
+			console.log("save button");
 			await dispatch(updateUserThunk(profile));
 			alert("Profile saved");
-			navigate("/tuiter/profile");
 		} catch (error) {
         	console.log("Error saving profile: ", error);
     	}
 	};
 
 	const loadProfile = async () => {
-		console.log("loadProfile");
 		try {
 			const { payload } = await dispatch(profileThunk());
-			console.log("loadProfile Payload: ", payload);
 			setProfile(payload);
 		} catch (error) {
 			console.log("loadProfile Error: ", error);
